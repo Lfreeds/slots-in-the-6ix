@@ -23,23 +23,23 @@ resetBut.addEventListener("click", resetPage);
 let symbols = [
   {
     name: "sym1",
-    ptMulti: 6,
+    ptMulti: 20,
   },
   {
     name: "sym2",
-    ptMulti: 4,
+    ptMulti: 12,
   },
   {
     name: "sym3",
-    ptMulti: 3,
+    ptMulti: 8,
   },
   {
     name: "sym4",
-    ptMulti: 2,
+    ptMulti: 4,
   },
   {
     name: "sym5",
-    ptMulti: 1,
+    ptMulti: 2,
   },
 ];
 
@@ -85,6 +85,7 @@ maxBetBut.addEventListener("click", setMaxBet);
 
 function setMaxBet() {
   currentBet = 50;
+  checkBalance();
   currentBetBox.innerHTML = `${currentBet}`;
 }
 
@@ -106,6 +107,7 @@ raiseBetBut.addEventListener("click", raiseBet);
 function raiseBet() {
   if (currentBet < 50) {
     currentBet++;
+    checkBalance();
     currentBetBox.innerHTML = `${currentBet}`;
   }
 }
@@ -179,6 +181,7 @@ function spin() {
   checkForWin(win4);
   checkForWin(win5);
   calcWinnings();
+  checkBalance();
   endMatch(currentCred);
 }
 
@@ -229,4 +232,11 @@ function endMatch(currentCred) {
 
 function resetPage() {
   window.location.reload();
+}
+
+//function to disallow bets higher than current cred amount
+function checkBalance() {
+  if (currentBet > currentCred) {
+    currentBet = currentCred;
+  }
 }
