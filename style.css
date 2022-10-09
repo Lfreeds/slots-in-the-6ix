@@ -171,35 +171,35 @@ button {
 }
 
 .cell.sym1 {
-  background-image: url("/imgs/masai-larry-ob.jpeg");
+  background-image: url("./imgs/masai-larry-ob.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .cell.sym2 {
-  background-image: url("/imgs/ROTY.jpeg");
+  background-image: url("./imgs/ROTY.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .cell.sym3 {
-  background-image: url("/imgs/og-ovo-drawing.png");
+  background-image: url("./imgs/og-ovo-drawing.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .cell.sym4 {
-  background-image: url("/imgs/raptor.jpeg");
+  background-image: url("./imgs/raptor.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .cell.sym5 {
-  background-image: url("/imgs/raptors-logo.jpeg");
+  background-image: url("./imgs/raptors-logo.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
