@@ -12,8 +12,8 @@ img {
 
 body {
   display: grid;
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vh;
   grid-template-columns: 1.75fr 3.5fr 1.75fr;
   grid-template-rows: 1fr 3.5fr 0.75fr 1fr;
   column-gap: 5px;
