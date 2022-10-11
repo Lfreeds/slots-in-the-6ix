@@ -11,6 +11,9 @@ const lowerBetBut = document.getElementById("lowerBet");
 const raiseBetBut = document.getElementById("raiseBet");
 const maxBetBut = document.getElementById("maxBet");
 const spinBut = document.getElementById("spinButton");
+const midRowEl = document.getElementById("midRow");
+const midRowEl1 = document.getElementById("midRow1");
+const midRowEl2 = document.getElementById("midRow2");
 
 var currentBet = 25;
 var maxBet = 50;
@@ -42,9 +45,6 @@ let symbols = [
     ptMulti: 2,
   },
 ];
-
-// let symIndex = Math.floor(Math.random() * symbols.length);
-// console.log(symIndex);
 
 const winCondition = [3, 4, 5];
 
@@ -181,6 +181,7 @@ function spin() {
   checkForWin(win4);
   checkForWin(win5);
   calcWinnings();
+  changeBorder(checkForWin);
   checkBalance();
   endMatch(currentCred);
 }
@@ -238,5 +239,30 @@ function resetPage() {
 function checkBalance() {
   if (currentBet > currentCred) {
     currentBet = currentCred;
+    currentBetBox.innerText = `${currentBet}`;
+  }
+}
+
+//function to change borders to gold on win
+
+function changeBorder(checkForWin) {
+  if (
+    checkForWin(win1) ||
+    checkForWin2(win2) ||
+    checkForWin3(win3) ||
+    checkForWin4(win4) ||
+    checkForWin5(win5)
+  ) {
+    midRowEl.style.borderColor = "#FFD700";
+    midRowEl1.style.borderColor = "#FFD700";
+    midRowEl2.style.borderColor = "#FFD700";
+    messageBoxEl.style.borderColor = "#FFD700";
+    messageBoxEl.style.borderWidth = "5px";
+  } else {
+    midRowEl.style.borderColor = "black";
+    midRowEl1.style.borderColor = "black";
+    midRowEl2.style.borderColor = "black";
+    messageBoxEl.style.borderColor = "black";
+    messageBoxEl.style.borderWidth = "1px";
   }
 }
