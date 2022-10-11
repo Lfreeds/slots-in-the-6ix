@@ -10,7 +10,7 @@ Go get that money.
 
 ### Sreenshot
 
-<img src=".imgs/slots-in-the-6ix-screenshot.png"/>
+<img src="./imgs/slots-in-the-6ix-screenshot.png"/>
 
 ### Technologies Used
 
@@ -25,4 +25,5 @@ This game was made possible using Html, CSS and Javascript.
 Some things I would like to further add to the game would be:
 
   Animate the slots to actually spin.
+  Fix styling issues
   
