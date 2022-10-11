@@ -10,7 +10,7 @@ Go get that money.
 
 ### Sreenshot
 
-<img src=".imgs/Slots in the 6ix Screenshot.png"/>
+<img src=".imgs/slots-in-the-6ix-screenshot.png"/>
 
 ### Technologies Used
 
