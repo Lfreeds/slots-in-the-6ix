@@ -25,4 +25,5 @@ This game was made possible using Html, CSS and Javascript.
 Some things I would like to further add to the game would be:
 
   Animate the slots to actually spin.
+  Fix styling issues
   
