@@ -18,7 +18,7 @@ This game was made possible using Html, CSS and Javascript.
 
 ### Play!
 
-[Click this link to play](https://lfreeds.github.io/slots-from-the-6ix/)
+[Click this link to play](https://lfreeds.github.io/slots-in-the-6ix/)
 
 ### Next Steps
 
